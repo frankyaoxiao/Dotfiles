@@ -53,6 +53,9 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# star emacs
+bindsym $mod+t exec emacs
+
 # start rofi 
 bindsym $mod+d exec --no-startup-id $HOME/.config/rofi/bin/launcher_colorful
 

@@ -29,7 +29,7 @@
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/org/")
+(setq org-directory "~/Documents/Org")
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -53,3 +53,45 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+;; Make autocomplete better
+(setq company-idle-delay 0
+      company-minimum-prefix-length 1)
+
+;; Less jerky scrolling
+(setq scroll-step 1)
+(setq scroll-conservatively 10000)
+(setq auto-window-vscroll nil)
+(good-scroll-mode 1)
+
+;; Discord rich presence integration
+(elcord-mode)
+
+;; Add some extra keyworks for org-mode
+(after! org
+  (setq org-todo-keywords '((sequence "TODO(t)" "INPROGRESS(i)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)"))
+        org-todo-keyword-faces
+        '(("WAITING" :foreground "#9f7efe" :weight bold)
+          ("INPROGRESS" :foreground "#0098dd" :weight bold)
+          ("CANCELLED" :foreground "#ff6480" :weight bold))
+        ))
+
+;;; Music Player Settings (emms)
+(emms-all)
+(emms-default-players)
+(emms-mode-line 1)
+(emms-playing-time 1)
+(setq emms-source-file-default-directory "~/Music/"
+      emms-playlist-buffer-name "*Music*"
+      emms-info-asynchronously t
+      emms-source-file-directory-tree-function 'emms-source-file-directory-tree-find)
+(map! :leader
+      (:prefix ("a" . "EMMS audio player")
+       :desc "Open Emms" "r" #'emms
+       :desc "Go to emms playlist" "a" #'emms-playlist-mode-go
+       :desc "Emms pause track" "x" #'emms-pause
+       :desc "Emms stop track" "s" #'emms-stop
+       :desc "Emms play previous track" "p" #'emms-previous
+       :desc "Emms play next track" "n" #'emms-next))
+
+

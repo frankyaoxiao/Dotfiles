@@ -13,4 +13,8 @@ This is my collection of configuration files(also known as dotfiles) for my Linu
 9. ripgrep
 10. pynvim
 11. ranger
-12. I bet I forgot something anyways lmao
+12. zsh
+13. starship
+14. autojump
+15. zsh-autocomplete and syntax highlighting
+16. I bet I forgot something anyways lmao

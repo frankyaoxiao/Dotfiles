@@ -97,3 +97,15 @@
        :desc "Emms play next track" "n" #'emms-next))
 
 
+
+
+
+;; Mu4e config
+(set-email-account! "gmail"
+  '((mu4e-sent-folder       . "/gmail/Sent Mail")
+    (mu4e-trash-folder      . "/gmail/Trash")
+    (mu4e-refile-folder     . "/gmail/All Mail")
+    (smtpmail-smtp-user     . "frankyaoxiao@gmail.com")
+    (mu4e-compose-signature . "---\nFrank Xiao"))
+
+  t)

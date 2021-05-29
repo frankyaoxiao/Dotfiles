@@ -123,7 +123,7 @@ bindsym $mod+a focus parent
 
 ##### i3-gaps ##############
 for_window [class=".*"] border pixel 5
-gaps inner 30  
+gaps inner 30 
 gaps outer 1
 #gaps horizontal 2
 

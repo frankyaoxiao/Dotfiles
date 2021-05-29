@@ -1,10 +1,10 @@
 # Dotfiles
-This is my collection of configuration files(also known as dotfiles) for my Linux machine. This is a work in progress and will continue to change as time goes on.
+This is my collection of configuration files.
 
 # Requirements
-1. i3
-2. Doom emacs
-3. kitty
+1. i3-gaps(yes I waste space on gaps)
+2. Doom emacs(do you really think im going to build off base ahahahaha)
+3. kitty(gpu fast yes)
 4. neovim
 5. picom
 6. polybar
@@ -18,3 +18,9 @@ This is my collection of configuration files(also known as dotfiles) for my Linu
 14. autojump
 15. zsh-autocomplete and syntax highlighting
 16. I bet I forgot something anyways lmao
+
+And obviously the most important thing: the almighty Arch Linux!
+
+# Usage
+No automatic deployment as of right now so manual symlinking is probably your best bet
+

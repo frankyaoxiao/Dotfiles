@@ -59,11 +59,15 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# star emacs
+# start emacs
 bindsym $mod+t exec emacs
 
 # start rofi 
-bindsym $mod+d exec --no-startup-id $HOME/.config/rofi/bin/launcher_colorful
+bindsym $mod+d exec --no-startup-id $HOME/.config/rofi/launchers/colorful/launcher.sh
+
+# Start Firefox
+bindsym --release $mod+y exec --no-startup-id firefox
+
 
 # Power menu(rofi)
 bindcode $mod+119 exec --no-startup-id $HOME/.config/rofi/bin/applet_powermenu
@@ -229,10 +233,5 @@ bindsym $mod+r mode "resize"
 assign [class = "discord"] 2
 # Take a screenshot upon pressing $mod+x (select an area)
 bindsym --release $mod+x exec --no-startup-id import /tmp/latest-screenshot.png
-# Start Firefox
-bindsym --release $mod+y exec --no-startup-id firefox
-# Make certain windows float on startup
-for_window [class = "rpcs3"] floating enable
-
 
 

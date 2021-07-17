@@ -31,11 +31,13 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
+
+exec --no-startup-id blueman-applet
 # Feh for backgrounds
-exec --no-startup-id feh --randomize --bg-scale /home/frank/Wallpapers 
+exec --no-startup-id feh --bg-scale /home/frank/Wallpapers/nord.png
 
 # Launch Polybar
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh dark
 
 # xcompmgr compositor for transparency
 exec --no-startup-id picom 
@@ -234,4 +236,6 @@ assign [class = "discord"] 2
 # Take a screenshot upon pressing $mod+x (select an area)
 bindsym --release $mod+x exec --no-startup-id import /tmp/latest-screenshot.png
 
+# Float on startup
+for_window [class = "Celeste.bin.x86"] floating enable
 

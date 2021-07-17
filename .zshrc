@@ -111,3 +111,7 @@ alias doom="~/.emacs.d/bin/doom"
 
 # custom commands
 source ~/.CPstuff/cpfunctions.sh
+
+
+#PATH stuff
+export PATH=/home/frank/.local/bin:$PATH

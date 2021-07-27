@@ -5,19 +5,18 @@ This is my collection of configuration files.
 1. i3-gaps
 2. Doom emacs and whatever it depends off (fd and ripgrep I think)
 3. kitty
-4. neovim(Config modified from Chris at Machine's Lunarvim)
-5. picom
-6. polybar
-7. rofi
-8. Nerdfonts(Pretty much just Sauce Code Pro honestly)
-9. ripgrep
-10. pynvim
-11. ranger
-12. zsh and oh-my-zsh
-13. starship.rs
-14. autojump
-15. zsh-autocomplete and syntax highlighting
-16. I bet I forgot something anyways lmao
+4. picom
+5. polybar
+6. rofi
+7. Nerdfonts(Pretty much just Sauce Code Pro honestly)
+8. ripgrep
+9. pynvim
+10. ranger
+11. zsh and oh-my-zsh
+12. starship.rs
+13. autojump
+14. zsh-autocomplete and syntax highlighting
+15. I bet I forgot something anyways lmao
 
 And obviously the most important thing: the almighty Arch Linux!
 

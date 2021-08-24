@@ -88,10 +88,11 @@
 (map! :leader
       (:prefix ("a" . "EMMS audio player")
        :desc "Open Emms" "r" #'emms
+       :desc "Change Directory" "d" #'emms-play-directory
        :desc "Emms pause track" "x" #'emms-pause
-       :desc "Emms stop track" "s" #'emms-stop
        :desc "Emms play previous track" "p" #'emms-previous
-       :desc "Emms play next track" "n" #'emms-next))
+       :desc "Emms play next track" "n" #'emms-next
+       :desc "Emms seek" "s" #'emms-seek))
 
 
 ;; Org Mode Settings

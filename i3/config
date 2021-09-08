@@ -65,14 +65,11 @@ bindsym $mod+Shift+q kill
 bindsym $mod+t exec emacs
 
 # start rofi 
-bindsym $mod+d exec --no-startup-id $HOME/.config/rofi/launchers/colorful/launcher.sh
+bindsym $mod+d exec --no-startup-id "rofi -modi drun, rofi -show drun"
 
-# Start Firefox
-bindsym --release $mod+y exec --no-startup-id firefox
+# Start Vivaldi
+bindsym --release $mod+y exec --no-startup-id firefox 
 
-
-# Power menu(rofi)
-bindcode $mod+119 exec --no-startup-id $HOME/.config/rofi/bin/applet_powermenu
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+d exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a

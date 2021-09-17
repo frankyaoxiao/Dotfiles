@@ -57,7 +57,6 @@
 ;; Make autocomplete better
 (setq company-idle-delay 0
       company-minimum-prefix-length 1)
-
 ;; Less jerky scrolling
 (setq scroll-step 1)
 (setq scroll-conservatively 10000)

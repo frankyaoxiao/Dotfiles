@@ -6,6 +6,7 @@
 ;; use 'M-x doom/reload'.
 (package! good-scroll)
 (package! elcord)
+(package! lsp-java)
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
 ;(package! some-package)
 ;; To install a package directly from a remote git repo, you must specify a

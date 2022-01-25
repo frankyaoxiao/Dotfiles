@@ -64,9 +64,6 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start emacs
-bindsym $mod+t exec emacs
-
 # start rofi 
 bindsym $mod+d exec --no-startup-id "rofi -modi drun, rofi -show drun"
 

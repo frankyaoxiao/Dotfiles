@@ -108,6 +108,7 @@ eval "$(starship init zsh)"
 # aliases
 alias ls="exa -l -h"
 alias doom="~/.emacs.d/bin/doom"
+alias vim="lvim"
 
 # custom commands
 source ~/.CPstuff/cpfunctions.sh

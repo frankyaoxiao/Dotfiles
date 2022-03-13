@@ -37,7 +37,8 @@ exec --no-startup-id blueman-applet
 exec --no-startup-id feh --bg-scale /home/frank/Wallpapers/nord.png
 
 # No use for Caps Lock
-exec --no-startup-id setxkbmap -option caps:super
+
+exec --no-startup-id setxkbmap -option ctrl:nocaps
 
 # Launch Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh dark
@@ -163,7 +164,7 @@ set $ws9 "9"
 set $ws10 "10"
 
 # switch to workspace
-# bindcode 133 workspace number $ws1
+bindcode 66 workspace number $ws1
 bindsym --whole-window button2 workspace number $ws1
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+Shift+u workspace number $ws2

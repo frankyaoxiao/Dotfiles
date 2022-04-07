@@ -18,8 +18,8 @@ This is my collection of configuration files.
 14. zsh-autocomplete and syntax highlighting
 15. I bet I forgot something anyways lmao
 
-And obviously the most important thing: the almighty Arch Linux!
+BTW I USE ARCH
 
 # Usage
-No automatic deployment as of right now so manual symlinking is probably your best bet
+go find someone who actually knows how to rice lmao
 

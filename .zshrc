@@ -101,6 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH=$HOME/.config/nvcode/utils/bin:$PATH
 
+(cat ~/.cache/wal/sequences &)
 
 # Starship shell prompt
 eval "$(starship init zsh)"

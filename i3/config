@@ -34,17 +34,21 @@ exec --no-startup-id nm-applet
 
 exec --no-startup-id blueman-applet
 # Feh for backgrounds
-exec --no-startup-id feh --bg-scale /home/frank/Wallpapers/nord.png
+# exec --no-startup-id feh --bg-scale /home/frank/Wallpapers/nord.png
 
 # No use for Caps Lock
 
 exec --no-startup-id setxkbmap -option ctrl:nocaps
 
-# Launch Polybar
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh dark
 
 # xcompmgr compositor for transparency
 exec --no-startup-id picom 
+
+exec --no-startup-id wal --iterative -i $HOME/Wallpapers
+
+# Launch Polybar
+exec_always --no-startup-id $HOME/Dotfiles/polybar/launch.sh dark
+
 
 
 
@@ -141,14 +145,31 @@ smart_borders no_gaps
 # Set border colors
 
 # class                   border  backgr. text    indic.   child_border
-  client.focused          #F56064 #556064 #80FFF9 #09d2dc  #09d2dc
-  client.focused_inactive #2F3D44 #2F3D44 #AD69AF #454948
-  client.unfocused        #2F3D44 #2F3D44 #AD69AF #454948  #4e9497
-  client.urgent           #CB4B16 #FDF6E3 #AD69AF #268BD2
-  client.placeholder      #000000 #0c0c0c #ffffff #000000 
+#  client.focused          #F56064 #556064 #80FFF9 #09d2dc  #09d2dc
+#  client.focused_inactive #2F3D44 #2F3D44 #AD69AF #454948
+#  client.unfocused        #2F3D44 #2F3D44 #AD69AF #454948  #4e9497
+#  client.urgent           #CB4B16 #FDF6E3 #AD69AF #268BD2
+#  client.placeholder      #000000 #0c0c0c #ffffff #000000 
 
-  client.background       #2B2C2B
+#  client.background       #2B2C2B
 
+# DELETE THIS IF BROKEN LOL
+# Set colors from Xresources
+# Change 'color7' and 'color2' to whatever colors you want i3 to use 
+# from the generated scheme.
+# NOTE: The '#f0f0f0' in the lines below is the color i3 will use if
+# it fails to get colors from Xresources.
+set_from_resource $fg i3wm.color7 #f0f0f0
+set_from_resource $bg i3wm.color2 #f0f0f0
+
+# class                 border  backgr. text indicator child_border
+client.focused          $bg     $bg     $fg  $bg       $bg
+client.focused_inactive $bg     $bg     $fg  $bg       $bg
+client.unfocused        $bg     $bg     $fg  $bg       $bg
+client.urgent           $bg     $bg     $fg  $bg       $bg
+client.placeholder      $bg     $bg     $fg  $bg       $bg
+
+client.background       $bg
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -241,5 +262,6 @@ bindcode 66 scratchpad show
 assign [class = "discord"] 2
 # Take a screenshot upon pressing $mod+x (select an area)
 bindsym --release $mod+x exec --no-startup-id import ~/latest-screenshot.png
+
 
 

@@ -37,17 +37,16 @@ exec --no-startup-id blueman-applet
 # exec --no-startup-id feh --bg-scale /home/frank/Wallpapers/nord.png
 
 # No use for Caps Lock
-
 exec --no-startup-id setxkbmap -option ctrl:nocaps
 
+exec_always --no-startup-id $HOME/Dotfiles/polybar/launch.sh dark
 
 # xcompmgr compositor for transparency
 exec --no-startup-id picom 
 
-exec --no-startup-id wal --iterative -i $HOME/Wallpapers
+exec_always --no-startup-id wal --iterative -i $HOME/Wallpapers 
 
-# Launch Polybar
-exec_always --no-startup-id $HOME/Dotfiles/polybar/launch.sh dark
+exec_always --no-startup-id pywalfox update
 
 
 
@@ -258,8 +257,6 @@ bindcode 66 scratchpad show
 #         font pango:DejaVu Sans Mono 16
 # }
 
-# Start programs in different workspaces
-assign [class = "discord"] 2
 # Take a screenshot upon pressing $mod+x (select an area)
 bindsym --release $mod+x exec --no-startup-id import ~/latest-screenshot.png
 

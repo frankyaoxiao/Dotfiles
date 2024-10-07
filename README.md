@@ -3,12 +3,12 @@ This is my collection of configuration files.
 
 # Requirements
 1. i3-gaps
-2. Doom emacs and whatever it depends off (fd and ripgrep I think)
+2. Doom emacs (not anymore)
 3. kitty
 4. picom
 5. polybar
 6. rofi
-7. Nerdfonts(Pretty much just Sauce Code Pro honestly)
+7. Nerdfonts
 8. ripgrep
 9. pynvim
 10. ranger
@@ -16,10 +16,7 @@ This is my collection of configuration files.
 12. starship.rs
 13. autojump
 14. zsh-autocomplete and syntax highlighting
-15. I bet I forgot something anyways lmao
 
-BTW I USE ARCH
 
-# Usage
-go find someone who actually knows how to rice lmao
+
 
